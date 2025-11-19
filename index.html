@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaCool Rádió - Chatszabályzat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .rules-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 35px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .main-rule {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        .main-rule:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .rule-number {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+        }
+        
+        .rule-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            padding-left: 10px;
+        }
+        
+        .rule-content {
+            padding-left: 20px;
+        }
+        
+        .rule-item {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            position: relative;
+        }
+        
+        .rule-item:before {
+            content: "•";
+            color: #e74c3c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .acceptance {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .acceptance-text {
+            font-size: 1em;
+            color: #2c3e50;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 25px 20px;
+                margin-bottom: 20px;
+            }
+            
+            .rules-container {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 1.7em;
+            }
+            
+            .rule-title {
+                font-size: 1.2em;
+            }
+            
+            .rule-number {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 1.1em;
+            }
+            
+            .acceptance {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .rules-container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            .rule-content {
+                padding-left: 15px;
+            }
+            
+            .rule-item {
+                padding-left: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">📋</div>
+            <h1>MegaCool Rádió</h1>
+            <div class="subtitle">Chatszabályzat</div>
+        </div>
+        
+        <div class="rules-container">
+            <div class="main-rule">
+                <div class="rule-number">1</div>
+                <div class="rule-title">Csatornák és csapatok</div>
+                <div class="rule-content">
+                    <div class="rule-item">Csak az adminok hozhatnak létre új csatornákat és csapatokat</div>
+                    <div class="rule-item">Privát csatornák és csapatok létrehozása nem engedélyezett</div>
+                </div>
+            </div>
+            
+            <div class="main-rule">
+                <div class="rule-number">2</div>
+                <div class="rule-title">Társalgás</div>
+                <div class="rule-content">
+                    <div class="rule-item">Tisztelet a többi taggal szemben</div>
+                    <div class="rule-item">Nincs spam, trollkodás, trágárkodás</div>
+                    <div class="rule-item">Világosan érthető üzeneteket írj</div>
+                    <div class="rule-item">A magyar nyelvet használjuk a chaten</div>
+                </div>
+            </div>
+            
+            <div class="main-rule">
+                <div class="rule-number">3</div>
+                <div class="rule-title">Fájlmegosztás</div>
+                <div class="rule-content">
+                    <div class="rule-item">Csak a beszélgetéshez kapcsolódó fájlok (pl. képek) feltöltése engedélyezett</div>
+                    <div class="rule-item">Alap elvárás a vírusmentes fájlok feltöltése</div>
+                    <div class="rule-item">Szerzői jogok tiszteletben tartása (pl. ne ossz meg torrent oldalakról, ingyenes mp3 letöltő oldalakról elérhető fájlokat)</div>
+                </div>
+            </div>
+            
+            <div class="main-rule">
+                <div class="rule-number">4</div>
+                <div class="rule-title">Biztonság</div>
+                <div class="rule-content">
+                    <div class="rule-item">Ne oszd meg senkivel az általad ismert jelszavakat, főleg ne a sajátodat!</div>
+                    <div class="rule-item">Ha gyanús, zavaró vagy veszélyes dolgot észlelsz, jelezd az adminoknak</div>
+                </div>
+            </div>
+            
+            <div class="main-rule">
+                <div class="rule-number">5</div>
+                <div class="rule-title">Napi adattisztítás</div>
+                <div class="rule-content">
+                    <div class="rule-item">Minden napot újonnan, frissen kezdünk, ezért a chatet minden nap végén töröljük.</div>
+                </div>
+            </div>
+            
+            <div class="main-rule">
+                <div class="rule-number">6</div>
+                <div class="rule-title">Moderálás</div>
+                <div class="rule-content">
+                    <div class="rule-item">Tiszteld az adminok és moderátorok döntéseit.</div>
+                    <div class="rule-item">A szabályok megkerülésére vagy a moderálás akadályozására irányuló kísérlet szankciókat von maga után.</div>
+                    <div class="rule-item">A szabályok megszegése esetén annak súlyossága alapján időleges vagy végleges kitiltás történik.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="acceptance">
+            <div class="acceptance-text">
+                A MegaCool Rádió csevegőfalának használatával automatikusan elfogadod a szabályzatot.<br>
+                Ha nem értesz egyet a feltételekkel, kérjük, ne használd a chat szolgáltatást.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
